@@ -1,12 +1,8 @@
-import React from 'react'
 import React, { useState } from 'react';
 import { signUpFormValidation } from '../utils/validation';
 import '../styles/App.css';
 
-
 const App = () => {
-
-  return (
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,8 +12,6 @@ const App = () => {
 
   const [formErrors, setFormErrors] = useState({});
 
-  )
-}
   const handleInputChange = (e) => {
     const { id, value, type, checked } = e.target;
     const inputValue = type === 'checkbox' ? checked : value;
